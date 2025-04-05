@@ -6,7 +6,7 @@ services:
     image: quay.io/keycloak/keycloak:24.0.1
     command: start-dev --import-realm --features=scripts
     ports:
-      - "8889:8080"
+      - "8090:8080"
     environment:
       KEYCLOAK_ADMIN: mlisena
       KEYCLOAK_ADMIN_PASSWORD: A8424628

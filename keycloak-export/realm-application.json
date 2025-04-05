@@ -6,7 +6,7 @@
       "clientId": "spring-cloud-gateway-client",
       "protocol": "openid-connect",
       "secret": "springsecret123",
-      "redirectUris": ["http://localhost:8889/login/oauth2/code/spring-cloud-gateway-client"],
+      "redirectUris": ["http://localhost:8090/login/oauth2/code/spring-cloud-gateway-client"],
       "publicClient": false,
       "standardFlowEnabled": true,
       "directAccessGrantsEnabled": true,
