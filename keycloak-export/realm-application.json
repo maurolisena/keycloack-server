@@ -1,0 +1,47 @@
+{
+  "realm": "application-realm",
+  "enabled": true,
+  "clients": [
+    {
+      "clientId": "spring-cloud-gateway-client",
+      "protocol": "openid-connect",
+      "secret": "springsecret123",
+      "redirectUris": ["http://localhost:8889/login/oauth2/code/spring-cloud-gateway-client"],
+      "publicClient": false,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": true,
+      "authorizationServicesEnabled": true,
+      "webOrigins": ["+"],
+      "attributes": {
+        "post.logout.redirect.uris": "+"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "mlisena",
+      "enabled": true,
+      "emailVerified": true,
+      "email": "mlisena@gmail.com",
+      "firstName": "Mauro",
+      "lastName": "Lisena",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "A8424628",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["user"]
+    }
+  ],
+  "roles": {
+    "realm": [
+      {
+        "name": "user",
+        "description": "Default user role"
+      }
+    ]
+  }
+}
