@@ -4,7 +4,7 @@ services:
     hostname: keycloak-server
     container_name: keycloak-server
     image: quay.io/keycloak/keycloak:24.0.1
-    command: start-dev --import-realm --features=scripts
+    command: start-dev --import-realm --features=scripts --hostname-strict=false --hostname-url=http://keycloak-server:8080
     ports:
       - "8090:8080"
     environment:
